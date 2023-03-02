@@ -19,10 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin/menu', function () {
-    return view('menu');
-});
-
 
 
 Route::get('/dashboard', function () {
@@ -43,7 +39,11 @@ Route::prefix('admin')->middleware(['auth'])->group(function () { //can't go in 
     Route::post('addCustomer', [App\Http\Controllers\Admin\CustomerController::class,'store']);
     Route::get('editCustomer/{customer_id}', [App\Http\Controllers\Admin\CustomerController::class,'edit']);
     Route::put('update-customer/{customer_id}', [App\Http\Controllers\Admin\CustomerController::class,'update']);
-    
+    Route::get('deleteCustomer/{customer_id}', [App\Http\Controllers\Admin\CustomerController::class,'delete']);
+    Route::get('/menu', function () {
+        return view('menu');
+    });
+
 });
 
 

@@ -40,15 +40,33 @@ class CustomerController extends Controller
         return view('admin.customer.edit', compact('customer'));
     }
 
-    // public function update(CustomerFormRequest $request, customer_id){
-    //     $data = $request->validated();
-    //     //$customer is variable
-    //     $customer = CustomerDetail::find($customer_id));    //Customer is model
-    //     $customer->name = $data['name'];   //$data is from the above validated data
-    //     $customer->email = $data['email'];
-    //     $customer->contact = $data['contact'];
-    //     $customer->update();
-    //     return redirect('admin/customer')->with('message','Customer Updated Successfully');
+    public function update(CustomerFormRequest $request, $customer_id)
+    {
+        $data = $request->validated();
+        //$customer is variable
+        $customer = CustomerDetail::find($customer_id);    //Customer is model
+        $customer->name = $data['name'];   //$data is from the above validated data
+        $customer->email = $data['email'];
+        $customer->contact = $data['contact'];
+        $customer->update();
+        return redirect('admin/customer')->with('message','Customer Updated Successfully');
 
-    // }
+    }
+
+    public function delete($customer_id)
+    {
+        // $customer = CustomerDetail::find($customer_id);
+        // if($customer_id)
+        // {
+        //     $customer->delete();
+        //     return redirect('admin/customer')->with('message', 'Customer Deleted Successfully');
+        // }
+        // else
+        // {
+        //     return redirect('admin/customer')->with('message', 'No Customer Id found');
+        // }
+        $data = CustomerDetail::find ($customer_id);
+        $data->delete();
+        return redirect('admin/customer');
+    }
 }

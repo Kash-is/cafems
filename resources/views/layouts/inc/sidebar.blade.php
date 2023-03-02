@@ -103,8 +103,9 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-user"></i>
+                <a class="nav-link" href="{{url('menu')}}
+                ">
+                    <i class="fa-solid fa-burger"></i>
                     <span>Menu</span></a>
             </li>
 

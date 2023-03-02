@@ -31,12 +31,12 @@
 
         <div class="mb-4">
             <label for="">Email address</label>
-            <input type="email" name="email" value="{{($customer->email)}} class="form-control" id="inputGroupPrepend2" aria-describedby="inputGroupPrepend2" placeholder="example@example.com">
+            <input type="email" name="email" value="{{($customer->email)}}" class="form-control" id="inputGroupPrepend2" aria-describedby="inputGroupPrepend2" placeholder="example@example.com">
         </div>
 
         <div class="mb-4">
             <label for="">Contact No</label>
-            <input type="text" name="contact" value="{{($customer->contact)}} class="form-control" placeholder="" required>
+            <input type="text" name="contact" value="{{($customer->contact)}}" class="form-control" placeholder="" required>
         </div>
 
         <div class="col-md-6">

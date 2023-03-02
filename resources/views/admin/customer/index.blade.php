@@ -50,7 +50,7 @@
                 <td>{{$item->contact}}</td>
                 <td>
                     <a href="{{url('admin/editCustomer/'.$item->id)}}" class="btn btn-success"><i class="fa-solid fa-pen"></i></a>
-                    <a href="" class="btn btn-danger"><i class="fa-solid fa-trash"></i></i></a>
+                    <a href="{{url('admin/deleteCustomer/'.$item->id)}}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></i></a>
                 </td>
 
             </tr>
