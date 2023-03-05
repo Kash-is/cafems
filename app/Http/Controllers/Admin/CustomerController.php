@@ -13,7 +13,7 @@ class CustomerController extends Controller
     {
         $customer = CustomerDetail::all(); //variable and model
         return view('admin.customer.index', compact('customer')); //compact function
-        
+
     }
 
     public function create()
@@ -27,7 +27,6 @@ class CustomerController extends Controller
         //$customer is variable
         $customer = new CustomerDetail;    //Customer is model
         $customer->name = $data['name'];   //$data is from the above validated data
-        $customer->email = $data['email'];
         $customer->contact = $data['contact'];
         $customer->save();
 
@@ -46,7 +45,6 @@ class CustomerController extends Controller
         //$customer is variable
         $customer = CustomerDetail::find($customer_id);    //Customer is model
         $customer->name = $data['name'];   //$data is from the above validated data
-        $customer->email = $data['email'];
         $customer->contact = $data['contact'];
         $customer->update();
         return redirect('admin/customer')->with('message','Customer Updated Successfully');

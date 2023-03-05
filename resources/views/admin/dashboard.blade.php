@@ -6,6 +6,9 @@
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-10 text-gray-800">Dashboard</h1>
+    <a href="{{url('admin/pos')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm pos">
+        <i class="fa-solid fa-tv text-white-50 pos-icon"></i></i>POS
+    </a>
 </div>
 
 <!-- Content Row -->
@@ -41,7 +44,7 @@
                     </div>
                     <div class="col-auto">
                     <i class="fa-solid fa-people-group fa-2x"></i>
-                        
+
                     </div>
                 </div>
             </div>
@@ -60,7 +63,7 @@
                             <div class="col-auto">
                                 <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">$1000</div>
                             </div>
-                           
+
                         </div>
                     </div>
                     <div class="col-auto">
@@ -89,6 +92,6 @@
         </div>
     </div>
 </div>
-@endsection 
+@endsection
 
 

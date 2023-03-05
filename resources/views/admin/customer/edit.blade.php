@@ -9,7 +9,7 @@
 <div class=" mt-4">
     <h3 class="">Edit Category</h3>
 
-    
+
 </div>
 <div class="card-body">
     @if ($errors->any())
@@ -27,11 +27,6 @@
         <div class="mb-4">
             <label for="">Customer Name</label>
             <input type="text" name="name" value="{{($customer->name)}}" class="form-control" placeholder="" required>
-        </div>
-
-        <div class="mb-4">
-            <label for="">Email address</label>
-            <input type="email" name="email" value="{{($customer->email)}}" class="form-control" id="inputGroupPrepend2" aria-describedby="inputGroupPrepend2" placeholder="example@example.com">
         </div>
 
         <div class="mb-4">

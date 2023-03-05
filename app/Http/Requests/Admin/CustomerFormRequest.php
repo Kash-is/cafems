@@ -29,16 +29,12 @@ class CustomerFormRequest extends FormRequest
                 'max:50'
             ],
 
-            'email' => [
-                'string',
-                'max:50'
-            ],
-
             'contact' => [
                 'string', //using string as it is more suitable instead of integer
-                
+
                 'regex:/^[0-9]{10}$/'
-                
+
+
             ],
         ];
         return $rules;

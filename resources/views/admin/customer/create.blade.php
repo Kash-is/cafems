@@ -9,7 +9,7 @@
 <div class=" mt-4">
     <h3 class="">Add new Customers</h3>
 
-    
+
 </div>
 <div class="card-body">
     @if ($errors->any())
@@ -26,11 +26,6 @@
         <div class="mb-4">
             <label for="">Customer Name</label>
             <input type="text" name="name" class="form-control" placeholder="" required>
-        </div>
-
-        <div class="mb-4">
-            <label for="">Email address</label>
-            <input type="email" name="email" class="form-control" id="inputGroupPrepend2" aria-describedby="inputGroupPrepend2" placeholder="example@example.com">
         </div>
 
         <div class="mb-4">

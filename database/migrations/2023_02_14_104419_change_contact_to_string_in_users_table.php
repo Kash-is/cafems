@@ -13,16 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('contact')->change();
-        });
+        // Schema::table('users', function (Blueprint $table) {
+        //     $table->string('contact')->change();
+        // });
     }
-    
+
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->integer('contact')->change();
-        });
+        // Schema::table('users', function (Blueprint $table) {
+        //     $table->integer('contact')->change();
+        // });
     }
-    
+
 };
