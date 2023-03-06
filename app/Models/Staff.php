@@ -22,4 +22,8 @@ class Staff extends Model
 
     ];
 
+    protected $date = [
+        'dob'
+    ]; //defining dob property
+
 }

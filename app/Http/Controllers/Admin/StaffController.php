@@ -34,9 +34,11 @@ class StaffController extends Controller
 
         $staff->image=$data['image'];
         // $staff->gender=$data['gender'];
-        $staff = $request->input('gender');
+        // $staff = $request->input('gender');
+        $staff->gender = $request->input('gender');
 
-        $staff->date=$data['dob'];
+        $staff->dob = \Carbon\Carbon::createFromFormat('Y-m-d', $data['dob'])->format('Y-m-d');
+
         $staff->save();
 
         return redirect('admin/staff')->with('message','Staff added successfully');

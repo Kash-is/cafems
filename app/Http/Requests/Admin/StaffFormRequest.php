@@ -32,7 +32,7 @@ class StaffFormRequest extends FormRequest
             'email' => 'required|string|max:255|unique:staff',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'gender' => 'required|in:Male,Female,Others',
-            'dob' => 'required|date',
+            'dob' => 'required|date_format:Y-m-d',
 
         ];
 

@@ -52,11 +52,11 @@
             <div class="col">
                 <label for="">Gender</label><br>
 
-                <input type="radio" name="gender" class="form-radio-input" id="flexRadioDefault" value="Male">
+                <input type="radio" name="gender" class="form-radio-input" id="flexRadioDefault" value="Male" {{old('gender') === 'Male' ? 'checked' : ''}}>
                 <label for="flexRadioDefault" class="mr-5">Male</label>
-                <input type="radio" name="gender" class="form-radio-input" id="flexRadioDefault" value="Female">
+                <input type="radio" name="gender" class="form-radio-input" id="flexRadioDefault" value="Female" {{ old('gender') === 'Female' ? 'checked' : '' }}>
                 <label for="flexRadioDefault" class="mr-5">Female</label>
-                <input type="radio" name="gender" class="form-radio-input" id="flexRadioDefault" value="Others">
+                <input type="radio" name="gender" class="form-radio-input" id="flexRadioDefault" value="Others" {{ old('gender') === 'Others' ? 'checked' : '' }}>
                 <label for="flexRadioDefault" class="mr-5">Others</label>
 
             </div>

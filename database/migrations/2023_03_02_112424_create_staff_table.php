@@ -20,7 +20,9 @@ return new class extends Migration
             $table->string('contact');
             $table->string('email');
             $table->string('image');
-            $table->enum('gender', ["M", "F", "O"]);
+            $table->enum('gender', ['Male', 'Female', 'Others']);
+
+
             $table->date('dob');
             $table->timestamps();
         });
