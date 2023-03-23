@@ -9,7 +9,7 @@
 <div class="card mt-4">
     <div class="card-header">
         <h3>View Order
-            {{-- <a href="{{url('admin/addCustomer')}}" class="btn  btn-primary float-sm-end">Add Customer</a> --}}
+        <a href="{{url('')}}" class="btn  btn-primary float-sm-end">Add Order</a>
 
         </h3>
     </div>
@@ -30,9 +30,10 @@
                     </div>
                 </th> -->
                 <th>ID</th>
-                <th>Customer Name</th>
-                <th>Email</th>
-                <th>Contact No</th>
+                <th>Items</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
                 <th>Action</th>
             </tr>
         </thead>

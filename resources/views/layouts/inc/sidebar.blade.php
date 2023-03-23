@@ -79,7 +79,8 @@
                 <div id="collapseReserve" class="collapse" aria-labelledby="headingReserve" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h5 class="collapse-header">Booking:</h5>
-                        <a class="collapse-item" href="{{url('admin/booking')}}">Table Reservation</a>
+                        <a class="collapse-item" href="{{url('admin/addBooking')}}">Table Booking</a>
+                        <a class="collapse-item" href="{{url('admin/booking')}}">Booking Details</a>
 
                     </div>
                 </div>
@@ -113,6 +114,38 @@
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-wallet"></i>
                     <span>Billing</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCategory"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-book"></i>
+                    <span>Category</span>
+                </a>
+                <div id="collapseCategory" class="collapse" aria-labelledby="headingReserve" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h5 class="collapse-header">Product:</h5>
+                        <a class="collapse-item" href="{{route('category.create')}}">Add Categories</a>
+                        <a class="collapse-item" href="{{url('admin/categories')}}">Categories</a>
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-book"></i>
+                    <span>Product</span>
+                </a>
+                <div id="collapseProduct" class="collapse" aria-labelledby="headingReserve" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h5 class="collapse-header">Product:</h5>
+                        <a class="collapse-item" href="{{url('admin/addProduct')}}">Add Products</a>
+                        <a class="collapse-item" href="{{url('admin/product')}}">Product</a>
+
+                    </div>
+                </div>
             </li>
 
             <!-- Divider -->

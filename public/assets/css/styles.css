@@ -11397,8 +11397,7 @@ div .image-logo{
  } */
 
 
- .card-order{
-
+ .category-menu .food-category{
      display: flex;
      overflow: auto;
      white-space: nowrap;
@@ -11506,4 +11505,58 @@ tr:nth-child(even){
 
 .cancel{
     background-color: rgb(219, 221, 221);
+}
+
+
+.category-food{
+    width: 739px;
+    height: 450px;
+    background: rgb(212, 208, 241) ;
+    border: radius 6px;
+    position: fixed;
+    top: 10%;
+    left: 42%;
+    transform:translate(-3%, -6%);
+    /* visibility: hidden;
+    transition: translate 0.4s, top 0.4s; */
+    padding: 0 30px 30px;
+    color: #333;
+
+}
+
+.homemade-food{
+    width: 213px;
+    border-radius: 31px;
+    height: 250px;
+}
+
+.cate-gory-food{
+    padding: 45px 134px
+}
+
+.name-of-food{
+    cursor: pointer;
+}
+
+.click-botton{
+    padding: 5px 30px;
+    margin-left: 35%;
+
+}
+/*
+.open-popup{
+    visibility: visible;
+    top: 20%;
+    transform:translate(-6%, 10%) ;
+
+} */
+
+
+.name-of-food{
+    margin-top: 5rem;
+    margin-left: 4rem;
+}
+
+.category-name{
+    margin: 0 30px;
 }
