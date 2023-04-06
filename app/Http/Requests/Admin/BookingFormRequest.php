@@ -29,8 +29,8 @@ class BookingFormRequest extends FormRequest
             'table' => 'required|in:1,2,3,4,5,6,7,8,9,10',
             'arrivaltime' => 'required|date_format:H:i',
             'departuretime' => 'required|date_format:H:i',
-            'contact' => 'required|regex:~9[6-8]{1}[0-9]{8}~|digits:10|distinct|unique:booking',
-            'email' => 'required|max:255|unique:booking',
+            'contact' => 'required|regex:~9[6-8]{1}[0-9]{8}~|digits:10|distinct',
+            'email' => 'required|max:255',
             'status' => 'required|in:reserved,unreserved'
 
 

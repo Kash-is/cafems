@@ -11,6 +11,7 @@
             <a href="" class="btn  btn-primary float-sm-end">Booking</a>
 
         </h3>
+    </div>
 
 
         <div id="booking" class="section" style= "margin-left: 20px;">
@@ -21,6 +22,11 @@
                             @foreach ($errors->all() as $error)
                                 <div>{{$error}}</div>
                             @endforeach
+                        </div>
+                    @endif
+                    @if(session('message'))
+                        <div class="alert alert-success">
+                            {{ session('message') }}
                         </div>
                     @endif
                     <form action="{{ url('admin/addBooking')}}" method="Post">
@@ -132,6 +138,7 @@
                     </form>
                 </div>
             </div>
-    </div>
+        </div>
+
 </div>
 @endsection

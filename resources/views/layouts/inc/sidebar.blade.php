@@ -89,7 +89,7 @@
             <li class="nav-item {{Request::is('admin/customer') || Request::is('admin/addCustomer') || Request::is('admin/editCustomer') ? ' active':'collapsed'}}">
                 <a class="nav-link " href="#" data-toggle="collapse" data-target="#collapseCustomer"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-book"></i>
+                    <i class="fa-solid fa-people-group"></i>
                     <span>Customers</span>
                 </a>
                 <div id="collapseCustomer" class=" collapsed collapse {{Request::is('admin/customer') || Request::is('admin/addCustomer') || Request::is('admin/editCustomer') ? 'show': null}}" aria-labelledby="headingCustomer" data-parent="#accordionSidebar">
@@ -101,11 +101,11 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Charts -->
+
             <li class="nav-item">
-                <a class="nav-link" href="{{url('admin/menu')}}">
-                    <i class="fa-solid fa-burger"></i>
-                    <span>Menu</span>
+                <a class="nav-link" href="{{url('admin/table')}}">
+                    <i class="fa-solid fa-table-list"></i>
+                    <span>Table</span>
                 </a>
             </li>
 
@@ -119,7 +119,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCategory"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-book"></i>
+                    <i class="fa-solid fa-tags"></i>
                     <span>Category</span>
                 </a>
                 <div id="collapseCategory" class="collapse" aria-labelledby="headingReserve" data-parent="#accordionSidebar">
@@ -135,7 +135,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-book"></i>
+                    <i class="fa-solid fa-kaaba"></i>
                     <span>Product</span>
                 </a>
                 <div id="collapseProduct" class="collapse" aria-labelledby="headingReserve" data-parent="#accordionSidebar">

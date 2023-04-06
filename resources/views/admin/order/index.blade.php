@@ -23,41 +23,38 @@
     <table  class="table">
         <thead>
             <tr>
-                <!-- <th>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="checkAll" required="">
-                        <label class="custom-control-label" for="checkAll"></label>
-                    </div>
-                </th> -->
-                <th>ID</th>
-                <th>Items</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            {{-- @foreach($customer as $item) --}}
-            <tr>
-                <!-- <td>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckBox2" required="">
-                        <label class="custom-control-label" for="customCheckBox2"></label>
-                    </div>
-                </td> -->
-                {{-- <td>{{$item->id}}</td>
-                <td>{{$item->name}}</td>
-                <td>{{$item->email}}</td>
-                <td>{{$item->contact}}</td> --}}
-                {{-- <td>
-                    <a href="{{route('customer.edit',$item->id)}}" class="btn btn-success"><i class="fa-solid fa-pen"></i></a>
-                    <a href="{{url('admin/deleteCustomer/'.$item->id)}}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></i></a>
-                </td> --}}
+              <th>Order ID</th>
+              <th>Table Name</th>
+              <th>Staff ID</th>
+              <th colspan="3">Item</th>
+              <th>Total</th>
+              <th>Status</th>
+              <th>KOT Status</th>
 
             </tr>
-            {{-- @endforeach --}}
-        </tbody>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th>Item Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Discount</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>895</td>
+              <td>Pending</td>
+              <td>Pizza</td>
+              <td>2000</td>
+              <td>2</td>
+            </tr>
+          </tbody>
     </table>
 </div>
 @endsection

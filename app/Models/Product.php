@@ -12,6 +12,7 @@ class Product extends Model
     protected $table = 'products';
     protected $fillable = [
         'name',
+        'buying_price',
         'price',
         'quantity',
         'image',
@@ -22,4 +23,10 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function stock()
+    {
+        return $this->hasOne(Stock::class);
+    }
+
 }

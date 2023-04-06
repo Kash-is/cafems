@@ -25,6 +25,7 @@ class StoreProductRequest extends FormRequest
     {
         $rules= [
             'name'=>'required|string|max:255',
+            'buying_price'=>'string|required',
             'price'=>'string|required',
             'quantity'=>'string|required',
             'category_id' => 'required',

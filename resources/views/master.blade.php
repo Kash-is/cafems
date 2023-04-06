@@ -22,6 +22,20 @@
         <!-- Css -->
         <link href="//cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css" rel="stylesheet">
 
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+        <script>
+            $( function() {
+              $( "#datepicker" ).datepicker();
+            } );
+        </script>
+
+
         <style>
             .dataTables_wrapper .dataTables_length select
             {
@@ -61,12 +75,13 @@
 
         <script src="//cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
 
-        <script>
-            $(document).ready(function(){
-                $('#myDataTable').DataTable();
-            });
-            // let table = new DataTable('#myDataTable');
-        </script>
+        {{-- Date picker --}}
+
+
+
+
+
+
 
     </body>
 </html>

@@ -35,6 +35,11 @@
         </div>
 
         <div class="mb-4">
+            <label for="">Buying Price</label>
+            <input type="text" name="buying_price" class="form-control" placeholder="" required>
+        </div>
+
+        <div class="mb-4">
             <label for="">Category</label>
                 <select class="form-control" name="category_id" required>
                     @foreach ($categories as $category)
@@ -42,7 +47,7 @@
                     @endforeach
 
             </select>
-            <span class="select-arrow"></span>
+            <span class="select-arrow"  ></span>
         </div>
 
         <div class="row mb-4">

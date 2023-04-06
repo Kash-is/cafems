@@ -24,6 +24,7 @@
                     <th>Product Name</th>
                     <th>Category</th>
                     <th>Image</th>
+                    <th>Buying Price</th>
                     <th>Price</th>
                     <th>Quantity</th>
                     <th>Action</th>
@@ -42,6 +43,7 @@
                     @endif
                     {{-- <td>{{$products->category->name}}</td> --}}
                     <td><img src="{{(asset('uploads/product/'.$products->image))}}" width="100px" height="100px" alt=""></td>
+                    <td>{{$products->buying_price}}</td>
                     <td>{{$products->price}}</td>
                     <td>{{$products->quantity}}</td>
                     <td>

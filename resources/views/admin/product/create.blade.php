@@ -44,6 +44,11 @@
             <span class="select-arrow"></span>
         </div>
 
+        <div class="mb-4">
+            <label for="">Buying Price</label>
+            <input type="text" name="buying_price" class="form-control" placeholder="" required>
+        </div>
+
         <div class="row mb-4">
             <div class="col">
                 <label for="">Price</label>

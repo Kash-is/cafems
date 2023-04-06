@@ -58,6 +58,7 @@ class ProductController extends Controller
         }
 
         $product->image=$filename;
+        $product ->buying_price=$request->buying_price;
         $product ->price=$request->price;
         $product ->quantity=$request->quantity;
         $product->save();
@@ -115,6 +116,7 @@ class ProductController extends Controller
         }
 
         $product->image=$filename;
+        $product ->buying_price=$request->buying_price;
         $product ->price=$request->price;
         $product ->quantity=$request->quantity;
         $product->update();

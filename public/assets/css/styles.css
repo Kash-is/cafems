@@ -11340,55 +11340,190 @@ div .image-logo{
 
 /* _________________________________________POS----------------------------------------------------------- */
 
+.order{
+    width: 115%;
+}
+
+.category-menu{
+    display: block;
+    margin-left: 6rem;
+}
+
+
+.container{
+max-height: 50vh;
+overflow-y: auto;
+}
+
+.category-name{
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 2px 20px;
+    /* background-color: #ff3399;*/
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+
+}
+
+.add-new{
+    margin-left: 20px;
+    padding: 5px 20px;
+}
+
+.selectCustomer{
+    display: flex;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* ----------------------------------Pricing tag----------------------------------- */
+.pricing-plan {
+    margin: 0 0 1rem 0;
+    width: 100%;
+    position: relative;
+    background:  #f2f2f2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.pricing-plan .pricing-footer {
+    padding: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    background: linear-gradient(120deg, #00b5fd 0%, #0047b1 100%);
+    -webkit-border-radius: 4px 4px 0px 0px;
+    -moz-border-radius: 4px 4px 0px 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+.pricing-plan .pricing-footer  {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 30px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-plan .pricing-footer.secondary {
+    background-image: linear-gradient(120deg, #c0d64a 0%, #35690f 100%);
+}
+.pricing-plan .pricing-footer.red {
+    background-image: linear-gradient(120deg, #ff3434 0%, #a50000 100%);
+}
+.pricing-plan .pricing-features {
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+.pricing-plan .pricing-features li {
+    padding: 15px 15px 15px 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    line-height: 100%;
+    /* text-align: center; */
+}
+
+.pricing-plan .pricing-footer {
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+}
+
+@media (max-width: 767px) {
+    .pricing-plan .pricing-header {
+        text-align: center;
+    }
+    .pricing-plan .pricing-header i {
+        display: block;
+        float: none;
+        margin-bottom: 1.5rem;
+    }
+
+    .pricing-plan .pricing-features li {
+        padding: 00px 0px 0px 00px;
+        font-size: 0.8rem;
+      }
+
+}
+
+.white-hr {
+    border-top-color: #fff;
+  }
+
+  .place-order{
+    margin: 19px;
+    margin-left: 179px;
+    padding: 10px;
+  }
+
+  @media (max-width: 767px) {
+    .place-order {
+        margin: 10px;
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*
 
 .menu-page{
     display: flex;
- }
+ } */
 
  .menu-order{
      display: grid;
      grid-template-columns: 30% 70%;
  }
 
-
+/*
  .order{
      text-align: center;
- }
+ } */
 
  .click-button{
      padding-left: px;
  }
-
+/*
  .coffee-bar{
      border: none;
      margin: 20px;
      width: 311px;
-     /* border-radius: 13px; */
+     /* border-radius: 13px;
      height: 337px;
 
  }
 
- .category-menu{
-     display: block;
- }
 
  .container-fluid{
-     /* background-color: #E4E9F7; */
+     /* background-color: #E4E9F7;
  }
 
- .button{
+ /* .button{
      text-align: center;
 
      margin-bottom: 5vh;
- }
-
+ } */
+/*
  .place-order{
      box-shadow: 10px 5px 30px rgb(157, 157, 163);
      position: -webkit-sticky;
      position: sticky;
      top: 0;
 
- }
+ } */
  /*
  .coffee-bar{
      position: -webkit-sticky; /* Safari
@@ -11402,22 +11537,22 @@ div .image-logo{
      overflow: auto;
      white-space: nowrap;
  }
-
+/*
  .food-menu{
      display: grid;
      grid-template-columns: 25% 25% 25%;
      column-gap: 20rem;
      row-gap: 3rem;
-     width: 220px;
+     width: 220px; */
 
 
- }
+
  /*
  .center{
      text-align: center;
      padding-left: 5rem;
  }*/
-
+/*
  .pizza{
 
      height: 200px ;
@@ -11441,19 +11576,19 @@ div .image-logo{
      margin-top: 10px;
      padding: 20px;
 
- }
+ } */
 
- .choose-food{
-     /* box-shadow: 0 0 15px rgb(0, 0, 0, 0.1); */
+ /* .choose-food{
+     /* box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
      text-align: center;
 
- }
+ } */
 
- .name-of-food{
-     /* border: 5px solid rgb(248, 237, 239); */
+ /* .name-of-food{
+     /* border: 5px solid rgb(248, 237, 239);
      box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
      width: 220px;
- }
+ } */
 
  table{
     width: 100%;
@@ -11468,13 +11603,18 @@ div .image-logo{
  td, th{
     padding: 8px;
     border-bottom: 1px solid rgb(112, 111, 111);
+    font-weight: normal;
 }
 
 tr:nth-child(even){
     background-color: #dddddd;
 }
 
-.addIcon{
+.table-of-price{
+    background-color: #1085ef;
+}
+
+/* .addIcon{
     border-radius: 27px;
     border: blue;
     background-color: blue;
@@ -11482,12 +11622,12 @@ tr:nth-child(even){
     padding: 5px;
     font-size: 12px;
     margin-right: 3px;
-}
+} */
 
-.payment-info{
+/* .payment-info{
     text-align: left;
     margin-top: 15rem;
-    /* background-color: rgb(192, 185, 185); */
+    /* background-color: rgb(192, 185, 185);
     color: black;
 
 }
@@ -11497,7 +11637,7 @@ tr:nth-child(even){
     row-gap: 10px;
     border-radius: 0px;
     border: none;
-}
+} */
 
 .order-placing{
     padding: 5px 175px;
@@ -11508,7 +11648,7 @@ tr:nth-child(even){
 }
 
 
-.category-food{
+/* .category-food{
     width: 739px;
     height: 450px;
     background: rgb(212, 208, 241) ;
@@ -11518,7 +11658,7 @@ tr:nth-child(even){
     left: 42%;
     transform:translate(-3%, -6%);
     /* visibility: hidden;
-    transition: translate 0.4s, top 0.4s; */
+    transition: translate 0.4s, top 0.4s;
     padding: 0 30px 30px;
     color: #333;
 
@@ -11536,9 +11676,9 @@ tr:nth-child(even){
 
 .name-of-food{
     cursor: pointer;
-}
+} */
 
-.click-botton{
+/* .click-botton{
     padding: 5px 30px;
     margin-left: 35%;
 
@@ -11549,7 +11689,7 @@ tr:nth-child(even){
     top: 20%;
     transform:translate(-6%, 10%) ;
 
-} */
+}
 
 
 .name-of-food{
@@ -11559,4 +11699,4 @@ tr:nth-child(even){
 
 .category-name{
     margin: 0 30px;
-}
+} */
