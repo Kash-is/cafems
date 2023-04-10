@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('order_details', function (Blueprint $table) {
             $table->id();
-            $table->string('total_cost');
+            $table->string('product_cost');
             $table->string('quantity');
             $table->string('KOT_Details');
             $table->foreignId('order_id')->references('id')->on('order');
