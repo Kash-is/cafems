@@ -10,8 +10,8 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- 
- 
+
+
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root {
   --blue: #4e73df;
@@ -70,7 +70,7 @@ body {
   color: #000000;
   text-align: left;
   background-color: #ffffff;
-  
+
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -170,7 +170,7 @@ a {
   text-decoration: none;
   background-color: transparent;
   font-size: 20px;
-  
+
 }
 
 a:hover {
@@ -193,7 +193,7 @@ code,
 kbd,
 samp {
   /* font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;*/
-  font-size: 3em; 
+  font-size: 3em;
 }
 
 pre {
@@ -209,7 +209,7 @@ figure {
 
 img {
   vertical-align: middle;
-  border-radius: 40px;  
+  border-radius: 40px;
 }
 
 svg {
@@ -282,7 +282,7 @@ select {
 [type="submit"] {
   -webkit-appearance: button;
 } */
-/* 
+/*
 button:not(:disabled),
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
@@ -307,7 +307,7 @@ input[type="checkbox"] {
 textarea {
   overflow: auto;
   resize: vertical;
-  
+
 }
 
 
@@ -396,7 +396,7 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 1.25rem;
-  
+
 }
 
 h6, .h6 {
@@ -10414,7 +10414,7 @@ a:focus {
 /*--------------------------Dropdown background Color------------------------------------- */
 .sidebar .nav-item .collapse .collapse-inner .collapse-item:hover,
 .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover {
-  background-color: #8076ec;
+  background-color: rgb(219, 221, 221);
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item:active,
@@ -10579,7 +10579,7 @@ a:focus {
     content: '\f107';
     font-family: 'Font Awesome 5 Free';
   }
-  
+
   .sidebar .nav-item .nav-link[data-toggle="collapse"].collapsed::after {
     content: '\f105';
   }
@@ -11321,3 +11321,382 @@ div .image-logo{
   border-radius: 44px;
 
 }
+
+.pos{
+    padding: 10px 25px;
+}
+
+.pos-icon{
+    margin-right: 10px;
+}
+
+
+/* --------------------------------Staff------------------------------------------------------------- */
+.img-file{
+    padding: 4px;
+}
+
+
+
+/* _________________________________________POS----------------------------------------------------------- */
+
+.order{
+    width: 115%;
+}
+
+.category-menu{
+    display: block;
+    margin-left: 6rem;
+}
+
+
+.container{
+max-height: 50vh;
+overflow-y: auto;
+}
+
+.category-name{
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 2px 20px;
+    /* background-color: #ff3399;*/
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+
+}
+
+.add-new{
+    margin-left: 20px;
+    padding: 5px 20px;
+}
+
+.selectCustomer{
+    display: flex;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* ----------------------------------Pricing tag----------------------------------- */
+.pricing-plan {
+    margin: 0 0 1rem 0;
+    width: 100%;
+    position: relative;
+    background:  #f2f2f2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.pricing-plan .pricing-footer {
+    padding: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    background: linear-gradient(120deg, #00b5fd 0%, #0047b1 100%);
+    -webkit-border-radius: 4px 4px 0px 0px;
+    -moz-border-radius: 4px 4px 0px 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+.pricing-plan .pricing-footer  {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 30px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-plan .pricing-footer.secondary {
+    background-image: linear-gradient(120deg, #c0d64a 0%, #35690f 100%);
+}
+.pricing-plan .pricing-footer.red {
+    background-image: linear-gradient(120deg, #ff3434 0%, #a50000 100%);
+}
+.pricing-plan .pricing-features {
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+.pricing-plan .pricing-features li {
+    padding: 15px 15px 15px 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    line-height: 100%;
+    /* text-align: center; */
+}
+
+.pricing-plan .pricing-footer {
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+}
+
+@media (max-width: 767px) {
+    .pricing-plan .pricing-header {
+        text-align: center;
+    }
+    .pricing-plan .pricing-header i {
+        display: block;
+        float: none;
+        margin-bottom: 1.5rem;
+    }
+
+    .pricing-plan .pricing-features li {
+        padding: 00px 0px 0px 00px;
+        font-size: 0.8rem;
+      }
+
+}
+
+.white-hr {
+    border-top-color: #fff;
+  }
+
+  .place-order{
+    margin: 19px;
+    margin-left: 179px;
+    padding: 10px;
+  }
+
+  @media (max-width: 767px) {
+    .place-order {
+        margin: 10px;
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*
+
+.menu-page{
+    display: flex;
+ } */
+
+ .menu-order{
+     display: grid;
+     grid-template-columns: 30% 70%;
+ }
+
+/*
+ .order{
+     text-align: center;
+ } */
+
+ .click-button{
+     padding-left: px;
+ }
+/*
+ .coffee-bar{
+     border: none;
+     margin: 20px;
+     width: 311px;
+     /* border-radius: 13px;
+     height: 337px;
+
+ }
+
+
+ .container-fluid{
+     /* background-color: #E4E9F7;
+ }
+
+ /* .button{
+     text-align: center;
+
+     margin-bottom: 5vh;
+ } */
+/*
+ .place-order{
+     box-shadow: 10px 5px 30px rgb(157, 157, 163);
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+
+ } */
+ /*
+ .coffee-bar{
+     position: -webkit-sticky; /* Safari
+     position: sticky;
+     top: 0;
+ } */
+
+
+ .category-menu .food-category{
+     display: flex;
+     overflow: auto;
+     white-space: nowrap;
+ }
+/*
+ .food-menu{
+     display: grid;
+     grid-template-columns: 25% 25% 25%;
+     column-gap: 20rem;
+     row-gap: 3rem;
+     width: 220px; */
+
+
+
+ /*
+ .center{
+     text-align: center;
+     padding-left: 5rem;
+ }*/
+/*
+ .pizza{
+
+     height: 200px ;
+     width: 220px;
+     border-radius: 10px 10px 0 0;
+     padding: 0px;
+
+
+ }
+
+ .order-img{
+    object-fit: cover;
+ }
+
+ .food-name{
+     font-size: 25px;
+     line-height: 10px;
+     text-align: center;
+     color: brown;
+     font-weight: bolder;
+     margin-top: 10px;
+     padding: 20px;
+
+ } */
+
+ /* .choose-food{
+     /* box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
+     text-align: center;
+
+ } */
+
+ /* .name-of-food{
+     /* border: 5px solid rgb(248, 237, 239);
+     box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
+     width: 220px;
+ } */
+
+ table{
+    width: 100%;
+    border-collapse: collapse;
+    color: black;
+    font-size: 18px;
+    /* font-weight: 50px; */
+
+
+ }
+
+ td, th{
+    padding: 8px;
+    border-bottom: 1px solid rgb(112, 111, 111);
+    font-weight: normal;
+}
+
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+.table-of-price{
+    background-color: #1085ef;
+}
+
+/* .addIcon{
+    border-radius: 27px;
+    border: blue;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    margin-right: 3px;
+} */
+
+/* .payment-info{
+    text-align: left;
+    margin-top: 15rem;
+    /* background-color: rgb(192, 185, 185);
+    color: black;
+
+}
+
+.payment-button{
+    display: grid;
+    row-gap: 10px;
+    border-radius: 0px;
+    border: none;
+} */
+
+.order-placing{
+    padding: 5px 175px;
+}
+
+.cancel{
+    background-color: rgb(219, 221, 221);
+}
+
+
+/* .category-food{
+    width: 739px;
+    height: 450px;
+    background: rgb(212, 208, 241) ;
+    border: radius 6px;
+    position: fixed;
+    top: 10%;
+    left: 42%;
+    transform:translate(-3%, -6%);
+    /* visibility: hidden;
+    transition: translate 0.4s, top 0.4s;
+    padding: 0 30px 30px;
+    color: #333;
+
+}
+
+.homemade-food{
+    width: 213px;
+    border-radius: 31px;
+    height: 250px;
+}
+
+.cate-gory-food{
+    padding: 45px 134px
+}
+
+.name-of-food{
+    cursor: pointer;
+} */
+
+/* .click-botton{
+    padding: 5px 30px;
+    margin-left: 35%;
+
+}
+/*
+.open-popup{
+    visibility: visible;
+    top: 20%;
+    transform:translate(-6%, 10%) ;
+
+}
+
+
+.name-of-food{
+    margin-top: 5rem;
+    margin-left: 4rem;
+}
+
+.category-name{
+    margin: 0 30px;
+} */

@@ -11,7 +11,6 @@ class CustomerDetail extends Model
     protected $table = 'customer_detail';
     protected $fillable = [
         'name',
-        'email',
         'contact'
     ];
 }

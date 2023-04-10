@@ -7,7 +7,7 @@
 
 <div class="card mt-4">
     <div class="card-header">
-        <h3>View Customer 
+        <h3>View Customer
             <a href="{{url('admin/addCustomer')}}" class="btn  btn-primary float-sm-end">Add Customer</a>
 
         </h3>
@@ -19,7 +19,7 @@
         <div class="alert alert-success">{{session('message')}}</div>
     @endif
 
-    <table class="table">
+    <table id="myDataTable" class="table">
         <thead>
             <tr>
                 <!-- <th>
@@ -30,13 +30,12 @@
                 </th> -->
                 <th>ID</th>
                 <th>Customer Name</th>
-                <th>Email</th>
                 <th>Contact No</th>
                 <th>Action</th>
             </tr>
-        </thead>  
+        </thead>
         <tbody>
-            @foreach($customer as $item)  
+            @foreach($customer as $item)
             <tr>
                 <!-- <td>
                     <div class="custom-control custom-checkbox">
@@ -46,10 +45,9 @@
                 </td> -->
                 <td>{{$item->id}}</td>
                 <td>{{$item->name}}</td>
-                <td>{{$item->email}}</td>
                 <td>{{$item->contact}}</td>
                 <td>
-                    <a href="{{url('admin/editCustomer/'.$item->id)}}" class="btn btn-success"><i class="fa-solid fa-pen"></i></a>
+                    <a href="{{route('customer.edit',$item->id)}}" class="btn btn-success"><i class="fa-solid fa-pen"></i></a>
                     <a href="{{url('admin/deleteCustomer/'.$item->id)}}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></i></a>
                 </td>
 

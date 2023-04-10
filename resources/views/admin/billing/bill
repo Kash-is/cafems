@@ -1,0 +1,75 @@
+@extends('master')
+
+@section('title','Stock')
+
+@section('content')
+
+
+<!-- Content Row -->
+<div class=" mt-4">
+    <h3 class="">Add new Stock</h3>
+
+
+</div>
+<div class="card-body">
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            @foreach ($errors->all() as $error)
+                <div>{{$error}}</div>
+            @endforeach
+        </div>
+    @endif
+
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="text-center mb-5">Billing Invoice</h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Invoice #12345</h5>
+            <p class="card-text">Customer Name: John Doe</p>
+            <p class="card-text">Date: January 1, 2022</p>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Product 1</td>
+                  <td>1</td>
+                  <td>$10.00</td>
+                  <td>$10.00</td>
+                </tr>
+                <tr>
+                  <td>Product 2</td>
+                  <td>2</td>
+                  <td>$5.00</td>
+                  <td>$10.00</td>
+                </tr>
+                <tr>
+                  <td colspan="3">Subtotal:</td>
+                  <td>$20.00</td>
+                </tr>
+                <tr>
+                  <td colspan="3">Tax (10%):</td>
+                  <td>$2.00</td>
+                </tr>
+                <tr>
+                  <td colspan="3">Total:</td>
+                  <td>$22.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn btn-primary btn-lg btn-block">Pay Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+@endsection
